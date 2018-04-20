@@ -9,7 +9,7 @@ class UiController < ApplicationController
           '<title>CarService</title>'\
           '<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>'\
           "#{ActionController::Base.helpers.javascript_pack_tag 'application'}"\
-          "{ActionController::Base.helpers.stylesheet_pack_tag 'application'}"\
+          "#{ActionController::Base.helpers.stylesheet_pack_tag 'application'}"\
         '</head>'\
         '<body>'\
           '<div id="app"></div>'\

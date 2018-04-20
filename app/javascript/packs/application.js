@@ -8,3 +8,19 @@
 // layout file, like app/views/layouts/application.html.erb
 
 console.log('Hello World from Webpacker')
+
+import Vue from 'vue'
+
+import App from '../App.vue'
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const app = new Vue({
+    el: '#app',
+    template: '<App/>',
+    render: h => h(App)
+  })
+
+
+    console.log(app)
+})
