@@ -3,7 +3,7 @@ class CreateShops < ActiveRecord::Migration[5.2]
     create_table :shops do |t|
       t.string :title
       t.text :description
-      t.reference :user_id
+      t.references :user_id
 
       t.timestamps
     end
