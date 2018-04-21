@@ -14,7 +14,9 @@ import VueRouter from 'vue-router'
 
 import App from '../components/App.vue'
 import Index from '../components/Index.vue'
-import SignIn from '../components/SignIn.vue'
+import Feed from '../components/Feed.vue'
+import Market from '../components/Market.vue'
+import Blog from '../components/Blog.vue'
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -22,7 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const routes = [
     { path:  '/', component: Index },
-    { path: '/sign-in', component: SignIn }
+    { path: '/feed', component: Feed },
+    { path: '/market', component: Market },
+    { path: '/blog', component: Blog }
   ]
 
   const router = new VueRouter({
