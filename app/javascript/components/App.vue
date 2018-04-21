@@ -4,12 +4,10 @@
       <ul>
         <li>Севастополь</li>
         <li>Муссон</li>
-        <li>Must have</li>
+        <li>Musson fashion store</li>
       </ul>
     </aside>
-    <header>
-      header
-    </header>
+    <header></header>
     <nav>
       <ul>
         <li>Feed</li>
@@ -44,6 +42,8 @@ export default {
   }
 
   header {
+    background-image: url('/banner.png');
+    background-size: 100%; /* Современные браузеры */
     grid-area: header;
     background-color: #eee;
     justify-content: center;
@@ -93,6 +93,7 @@ export default {
     background-color: #000;
     color: #FCF3F3;
     font-weight: 100;
+    font-size: 10pt;
     text-transform: uppercase;
     justify-content: center;
     align-items: center;
@@ -112,6 +113,7 @@ export default {
   nav ul li {
     width: 100%;
     height: 40px;
+    font-size: 10pt;
     font-weight: 100;
     text-transform: uppercase;
     justify-content: center;
