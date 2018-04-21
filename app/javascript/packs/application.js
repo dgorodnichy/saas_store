@@ -10,13 +10,29 @@
 console.log('Hello World from Webpacker')
 
 import Vue from 'vue'
+import VueRouter from 'vue-router'
 
-import App from '../App.vue'
+import App from '../components/App.vue'
+import Index from '../components/Index.vue'
+import SignIn from '../components/SignIn.vue'
 
 document.addEventListener('DOMContentLoaded', () => {
 
+ Vue.use(VueRouter)
+
+  const routes = [
+    { path:  '/', component: Index },
+    { path: '/sign-in', component: SignIn }
+  ]
+
+  const router = new VueRouter({
+    mode: 'history',
+    routes
+  })
+
   const app = new Vue({
-    el: '#app',
+    el: 'main',
+    router,
     template: '<App/>',
     render: h => h(App)
   })
