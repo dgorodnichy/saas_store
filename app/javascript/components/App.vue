@@ -10,13 +10,13 @@
     <header></header>
     <nav>
       <ul>
-        <li>Feed</li>
-        <li>Market</li>
-        <li>Blog</li>
+        <li><router-link to="/feed">Feed</router-link></li>
+        <li><router-link to="/market">Market</router-link></li>
+        <li><router-link to="/blog">Blog</router-link></li>
       </ul>
     </nav>
     <article>
-      Article
+      <router-view></router-view>
     </article>
     <footer>
       SaaS fashion stores platform. 2018
@@ -67,6 +67,7 @@ export default {
     align-items: center;
     display: flex;
     font-size: 10pt;
+    font-weight: 100;
   }
 
   article {
@@ -107,20 +108,30 @@ export default {
     display: flex;
     width: 100%;
     background-color: #000;
-    color: #FCF3F3;
   }
 
-  nav ul li {
+  nav ul li{
     width: 100%;
     height: 40px;
-    font-size: 10pt;
-    font-weight: 100;
-    text-transform: uppercase;
     justify-content: center;
     align-items: center;
     display: flex;
     margin: 0 5px;
     padding: 0 20px;
+  }
+
+  nav ul li a,
+  nav ul li a:visited {
+    font-size: 10pt;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: #FCF3F3;
+    text-decoration: none;
+  }
+
+  .router-link-active {
+    font-weight: bold;
+    text-decoration: underline;
   }
 
   .grid {
