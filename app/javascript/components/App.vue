@@ -72,12 +72,10 @@ export default {
 
   article {
     grid-area: article;
-    background-color: #eee;
   }
 
   aside {
     grid-area: aside;
-    background-color: #FCF3F3;
   }
 
   aside ul {
